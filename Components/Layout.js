@@ -1,11 +1,11 @@
-import Header from './partials/Header';
-import Footer from './partials/Footer';
+import Header from './partials/Header'
+import Footer from './partials/Footer'
 
 const layoutStyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
-};
+}
 
 const Layout = props => (
   <div style={layoutStyle}>
@@ -13,6 +13,6 @@ const Layout = props => (
     {props.children}
     <Footer />
   </div>
-);
+)
 
-export default Layout;
+export default Layout

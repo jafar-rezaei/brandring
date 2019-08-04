@@ -1,9 +1,8 @@
-import fetch from 'isomorphic-unfetch';
-import Layout from '../Components/Layout';
+import fetch from 'isomorphic-unfetch'
+import Layout from '../Components/Layout'
 
-
-function Start({ stars }) {
-  return <Layout>Next stars: {stars}</Layout>;
+function Start ({ stars }) {
+  return <Layout>Next stars: {stars}</Layout>
 }
 
 /**
@@ -16,9 +15,9 @@ res - HTTP response object (server only)
 err - Error object if any error is encountered during the rendering
 */
 Start.getInitialProps = async ({ req }) => {
-  const res = await fetch('https://api.github.com/repos/zeit/next.js');
-  const json = await res.json();
-  return { stars: JSON.stringify(json) };
-};
+  const res = await fetch('https://api.github.com/repos/zeit/next.js')
+  const json = await res.json()
+  return { stars: JSON.stringify(json) }
+}
 
-export default Start;
+export default Start

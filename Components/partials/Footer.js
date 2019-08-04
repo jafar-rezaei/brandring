@@ -1,6 +1,5 @@
 const Footer = props => (
-	<div>foooter</div>
-);
+  <div>foooter</div>
+)
 
-
-export default Footer;
+export default Footer

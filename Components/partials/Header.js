@@ -1,9 +1,8 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
 const linkStyle = {
   marginRight: 15
-};
-
+}
 
 const Header = () => (
   <div>
@@ -13,15 +12,15 @@ const Header = () => (
     <Link href="/about">
       <a style={linkStyle}>About</a>
     </Link>
-    <Link href="/product/[id]" as="/product/abc" >
-	  <a>First Post</a>
-	</Link>
-    <Link href="/start" >
-	  <a>start</a>
-	</Link>
+    <Link href="/product/[id]" as="/product/abc">
+      <a>First Post</a>
+    </Link>
+    <Link href="/start">
+      <a>start</a>
+    </Link>
 
-	<p>scoped!</p>
-      <style jsx>{`
+    <p>scoped!</p>
+    <style jsx>{`
         p {
           color: blue;
         }
@@ -34,7 +33,7 @@ const Header = () => (
           }
         }
       `}</style>
-      <style global jsx>{`
+    <style global jsx>{`
         body {
           background: #fff;
        	
@@ -42,6 +41,6 @@ const Header = () => (
 
       `}</style>
   </div>
-);
+)
 
-export default Header;
+export default Header
