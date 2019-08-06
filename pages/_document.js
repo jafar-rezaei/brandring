@@ -11,6 +11,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           {/* Import CSS for nprogress */}
+          <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+          <link rel='stylesheet' type='text/css' href='/static/css/app/brandring.css' />
           <link rel='stylesheet' type='text/css' href='/static/nprogress.css' />
         </Head>
         <body>

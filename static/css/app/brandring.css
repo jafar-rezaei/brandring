@@ -1,0 +1,224 @@
+@charset "utf-8";
+@font-face {
+	font-family: "SDF";
+	src: url(../Fonts/IRANSansLight.woff) format("woff"),
+	url(../Fonts/IRANSansLight.ttf) format("truetype");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "SDF";
+	src: url(../Fonts/IRANSansMedium.woff) format("woff"),
+	url(../Fonts/IRANSansMedium.ttf) format("truetype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "BYekan";
+	src: url(../Fonts/BYekan.eot) format("eot"),
+	url(../Fonts/BYekan.woff) format("woff"),
+	url(../Fonts/BYekan.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: 'tetris_webfont';
+	src: url(../Fonts/tetris_webfont.eot?92703314);
+	src: url(../Fonts/tetris_webfont.eot?92703314#iefix) format("embedded-opentype"),
+	url(../Fonts/tetris_webfont.woff2?92703314) format("woff2"),
+	url(../Fonts/tetris_webfont.woff?92703314) format("woff"),
+	url(../Fonts/tetris_webfont.ttf?92703314) format("truetype"),
+	url(../Fonts/tetris_webfont.svg?92703314#tetris_webfont) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "tetris_webfont" , sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	speak: none;
+	line-height:1;
+
+	display: inline-block;
+	text-decoration: inherit;
+	text-align: center;
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0 !important;
+	font-family: "Roboto", "BYekan", "SDF", "Tahoma", sans-serif;
+	font-weight: 200;
+	color: #666;
+	background: #F0F3F5 url(/static/img/bgPattern.jpg) no-repeat center bottom;
+	background-size: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+header {position: relative;top: 0;width: 100%;}
+header::before{
+	content:'';
+	background: #74ebd5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #88b984, #6e9fef); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100%;
+	height: 115px;
+	position: absolute;
+	top: 0;
+}
+header::after{
+	content:'';
+	background: url("/static/img/topbanner.png");  /* fallback for old browsers */
+	width: 100%;
+	height: 115px;
+	position: absolute;
+	top: 0;
+}
+header .headbar{margin: 0 40px;top: 27px;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */border-radius: 22px;position: relative;height: 126px;background: #0052D4;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */box-shadow: 0 10px 40px -7px #003fa2d1;}
+header .headbar .logo{color: #fff;font-size: 32px;margin-left: 10px;padding-top: 20px;}
+header .headbar .logo img{
+
+}
+header .headbar .navbar{position: absolute;right: 10px;bottom: 10px;}
+header .headbar .navbar a{
+	color:#fff;
+	margin-right: 26px !important;
+	border-left: 2px solid #000;
+	padding-left: 11px;
+}
+
+header .headbar .sentence{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+}
+
+.container{
+	padding-right: 8px;
+	padding-left: 8px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 1200px){
+	.container {
+		width: 974px;
+	}
+}
+.byekan,
+.btn,
+.smalltext{
+	font-family: "BYekan", "SDF", "Tahoma", sans-serif;
+}
+.sdf {
+	font-family: "SDF", "BYekan", "Tahoma", sans-serif;
+}
+a {
+	color: #5b57ef;
+	text-decoration: none;
+}
+
+
+.content {
+	position: relative;
+	border-radius: 20px !important;
+	padding: 10px 10%;
+}
+.page-footer div {
+	text-align: center;
+	font-size: 12px;
+}
+p {
+	line-height: 2rem;
+}
+
+@media (max-width: 648px) and (min-width: 480px) {
+	.gameHolder .playBoard {
+		background-size: auto 55%;
+		background-position: 100% 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		margin: 0 !important;
+	}
+	.gameStatics > div .value {
+		right: 53%;
+	}
+	.modal.ltr .gameStatics > div .value {
+		left: 53%;
+	}
+}
+@media (max-width: 480px) and (min-width: 180px) {
+	.gameHolder .playBoard {
+		background-size: auto 45%;
+		background-position: 100% 50%;
+	}
+}
+
+
+.icon-one:before { content: '\e800';}
+.icon-two:before { content: '\e801';}
+.icon-three:before { content: '\e802';}
+.icon-uniE685:before { content: '\e803';}
+.icon-bil:before { content: '\e804';}
+.icon-upDown:before { content: '\e805';}
+.icon-fish:before { content: '\e806';}
+.icon-albalo:before { content: '\e807';}
+.icon-swipeLR:before { content: '\e808';}
+.icon-swipeTD:before { content: '\e809';}
+.icon-packMan:before { content: '\e80a';}
+.icon-brain:before { content: '\e80b';}
+.icon-hover:before { content: '\e80c';}
+.icon-skelete:before { content: '\e80d';}
+.icon-jorab:before { content: '\e80e';}
+.icon-jam:before { content: '\e80f';}
+.icon-number1:before { content: '\e810';}
+.icon-number2:before { content: '\e811';}
+.icon-number3:before { content: '\e812';}
+.icon-sound1:before { content: '\e813';}
+.icon-sound2:before { content: '\e814';}
+.icon-brush:before { content: '\e815';}
+.icon-money:before { content: '\e816';}
+.icon-clock:before { content: '\e817';}
+.icon-setting:before { content: '\e818';}
+.icon-borders:before { content: '\e819';}
+.icon-sibil:before { content: '\e81a';}
+.icon-responsive:before { content: '\e81b';}
+.icon-keyBoard:before { content: '\e81c';}
+.icon-ok:before { content: '\e81d';}
+.icon-close:before { content: '\e81e';}
+.icon-bug:before { content: '\e81f';}
+.icon-magic:before { content: '\e820';}
+.icon-uniE95A:before { content: '\e821';}
+.icon-uniE959:before { content: '\e822';}
+.icon-uniE790:before { content: '\e823';}
+.icon-notVibrate:before { content: '\e824';}
+.icon-vibrate:before { content: '\e825';}
+.icon-uniE7BE:before { content: '\e826';}
+.icon-uniE7BC:before { content: '\e827';}
+.icon-gem:before { content: '\e828';}
+.icon-coffee:before { content: '\e829';}
+.icon-leftRight:before { content: '\e82d';}
+.icon-hasSound:before { content: '\e82e';}
+.icon-colorPelete:before { content: '\e82f';}
+.icon-notSound:before { content: '\e830';}
+.icon-mobile:before { content: '\e831';}
+.icon-chimistry:before { content: '\e832';}
+.icon-desktop:before { content: '\e833';}
+.icon-abnabat:before { content: '\e834';}
+.icon-star:before { content: '\e835';}
+.icon-starHalf:before { content: '\e836';}
+.icon-sun:before { content: '\e837';}

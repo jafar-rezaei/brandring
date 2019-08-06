@@ -1,13 +1,12 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import Link from 'next/link'
 import NProgress from 'nprogress'
 import Router from 'next/router'
+import './../Components/i18n'
 
-const linkStyle = {
-  margin: '0 10px 0 0'
-}
-
+/**
+ * Show progress bar with router change
+ */
 Router.events.on('routeChangeStart', url => {
   console.log(`Loading: ${url}`)
   NProgress.start()
@@ -27,25 +26,9 @@ export default class MyApp extends App {
   }
 
   render () {
-alert('sss');
     const { Component, pageProps } = this.props
     return (
       <Container>
-        <div style={{ marginBottom: 20 }}>
-          <Link href='/'>
-            <a style={linkStyle}>Home</a>
-          </Link>
-          <Link href='/about'>
-            <a style={linkStyle}>About</a>
-          </Link>
-          <Link href='/forever'>
-            <a style={linkStyle}>Forever</a>
-          </Link>
-          <a href='/non-existing' style={linkStyle}>
-            Non Existing Page
-          </a>
-        </div>
-
         <Component {...pageProps} />
       </Container>
     )
