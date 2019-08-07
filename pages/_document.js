@@ -10,10 +10,10 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          {/* Import CSS for nprogress */}
-          <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto|Mr+De+Haviland&display=swap" rel="stylesheet" />
           <link rel='stylesheet' type='text/css' href='/static/css/app/brandring.css' />
           <link rel='stylesheet' type='text/css' href='/static/nprogress.css' />
+          <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
         </Head>
         <body>
           <Main />

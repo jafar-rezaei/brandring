@@ -1,8 +1,4 @@
-import Link from 'next/link'
-
-const linkStyle = {
-  marginRight: 15
-}
+import Link from './../main/link'
 
 const Header = () => (
   <header>
@@ -10,20 +6,20 @@ const Header = () => (
       <div className={'headbar'}>
         <div className="logo">Brandring</div>
         <div className="navbar">
-          <Link href="/">
-            <a style={linkStyle}>Home</a>
+          <Link activeClassName={'active'} href="/">
+            <a className={'home'}>Home</a>
           </Link>
-          <Link href="/about">
-            <a style={linkStyle}>About</a>
+          <Link activeClassName={'active'} href="/about">
+            <a className={'about'}>About</a>
           </Link>
-          <Link href="/product/[id]" as="/product/abc">
-            <a>First Post</a>
+          <Link activeClassName={'active'} href="/partners">
+            <a className={'partners'}>Partners</a>
           </Link>
-          <Link href="/start">
-            <a>start</a>
+          <Link activeClassName={'active'} href="/register">
+            <a className={'joinus'}>JoinUs</a>
           </Link>
         </div>
-        <div className={'sentence'}>The joy of powerfull static data</div>
+        <div className={'sentence'}>The joy of reliable great products</div>
       </div>
     </div>
   </header>
