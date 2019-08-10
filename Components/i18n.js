@@ -1,7 +1,7 @@
-import i18n from 'i18next'
-import Backend from 'i18next-fetch-backend'
-import { initReactI18next } from 'react-i18next'
-import fetch from 'isomorphic-fetch'
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import fetch from 'isomorphic-fetch';
+import Backend from './main/i18next-universal-fetch';
 
 i18n
   .use(Backend)
@@ -11,7 +11,7 @@ i18n
     backend: {
       /* translation file path */
       loadPath: '/static/i18n/{{ns}}/{{lng}}.json',
-      fetch
+      fetch,
     },
     fallbackLng: 'fa',
     debug: true,
@@ -21,11 +21,11 @@ i18n
     keySeparator: false,
     interpolation: {
       escapeValue: false,
-      formatSeparator: ','
+      formatSeparator: ',',
     },
     react: {
-      wait: true
-    }
-  })
+      wait: true,
+    },
+  });
 
-export default i18n
+export default i18n;

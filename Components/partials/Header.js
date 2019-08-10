@@ -1,28 +1,46 @@
-import Link from './../main/link'
+import Link from '../main/link';
 
 const Header = () => (
   <header>
     <div className="container">
-      <div className={'headbar'}>
-        <div className="logo">Brandring</div>
+      <div className="headbar">
+        <div className="logo">
+
+          <svg xmlns="http://www.w3.org/2000/svg" id="svg32" viewBox="0 0 5416.2949 1195.0633" version="1.1">
+            <g transform="translate(-903.35413,-4584.44)" id="Layer_x0020_1">
+              <path d="m 906.82,5324.14 v -736.23 h 141.55 v 388.76 c 78.01,-69.97 125.06,-89.54 223.67,-92.59 222.89,-6.9 360.44,218.13 360.44,423.86 0,217.99 -123.36,470.12 -363.36,464 -227.04,-5.79 -362.29,-222.61 -362.29,-447.8 z m 362.04,320.35 c 165.14,-0.23 228.61,-186.06 228.61,-323.09 0,-149.55 -70.59,-301.35 -230.81,-305.04 -129.61,-2.99 -212.09,141.87 -217.8,293.58 -6.11,162.52 76.87,334.74 220,334.55 z" className="fil1 str1" />
+              <path d="m 3044.65,5771.2 v -875.09 h 141.55 l -0.67,84.54 c 43.65,-47.48 119.78,-95.91 216.52,-93.32 188.65,-3.17 286.39,116.58 335.31,253.52 18.75,52.5 25.44,101.15 27.37,141.24 l 1.44,488.55 -137.97,0.01 1.91,-462.24 c 1.71,-128.05 -78.87,-287.54 -225.63,-292.06 -160.42,5.65 -221.52,164.06 -229.55,299.68 l 6.11,456.13 -136.39,-0.97 z" className="fil2 str2" />
+              <polygon points="5442.85,4891.2 5442.21,5026.74 5438.77,5774.2 5300.8,5773.22 5301.3,4891.2 " className="fil2 str2" />
+              <path d="m 2917.59,5335.83 v 436.22 h -141.55 v -88.76 c -78.01,69.97 -125.06,89.54 -223.67,92.59 -222.9,6.91 -358.39,-220.41 -358.39,-426.14 0,-217.99 121.31,-467.85 361.31,-461.72 227.05,5.79 362.29,222.61 362.29,447.8 z m -362.04,-320.35 c -165.14,0.23 -228.61,186.06 -228.61,323.09 0,149.55 70.59,301.35 230.81,305.04 129.61,2.99 212.09,-141.87 217.8,-293.58 6.11,-162.52 -76.87,-334.74 -220,-334.55 z" className="fil1 str1" />
+              <path d="m 4602.47,5324.14 v -736.23 h -141.55 v 388.76 c -78.01,-69.97 -125.06,-89.54 -223.67,-92.59 -222.89,-6.9 -360.44,218.13 -360.44,423.86 0,217.99 123.36,470.12 363.36,464 227.04,-5.79 362.29,-222.61 362.29,-447.8 z m -362.04,320.35 c -165.14,-0.23 -228.61,-186.06 -228.61,-323.09 0,-149.55 70.59,-301.35 230.81,-305.04 129.61,-2.99 212.09,141.87 217.8,293.58 6.11,162.52 -76.87,334.74 -220,334.55 z" className="fil1 str1" />
+              <path d="m 4734.77,5773.22 0.5,-882.02 h 141.55 c 0,34.64 -0.5,55.07 -0.5,89.71 121.63,-116.9 165.21,-92.22 298.67,-91.8 l -3.57,118.8 c -219.09,-10.33 -275.41,114.3 -293.35,281.16 l -5.32,485.13 z" className="fil2 str1" />
+              <path d="m 1744.77,5773.22 0.5,-882.02 h 141.55 c 0,34.64 -0.5,55.07 -0.5,89.71 121.63,-116.9 165.21,-92.22 298.67,-91.8 l -3.57,118.8 c -219.09,-10.33 -275.41,114.3 -293.35,281.16 l -5.32,485.13 z" className="fil2 str1" />
+              <rect height="123.5" width="141.62" y="4671.2002" x="5301.23" className="fil2 str2" />
+              <path d="m 5594.65,5771.2 v -875.09 h 141.55 l -0.67,84.54 c 43.65,-47.48 119.78,-95.91 216.52,-93.32 188.65,-3.17 286.39,116.58 335.31,253.52 18.75,52.5 25.44,101.15 27.37,141.24 l 1.44,488.55 -137.97,0.01 1.91,-462.24 c 1.71,-128.05 -78.87,-287.54 -225.63,-292.06 -160.42,5.65 -221.52,164.06 -229.55,299.68 l 6.11,456.13 -136.39,-0.97 z" className="fil2 str2" />
+            </g>
+          </svg>
+          <span className="ringAroundLogo" />
+          <span className="ringAroundLogo2" />
+          <span className="stripDownLogo" />
+        </div>
         <div className="navbar">
-          <Link activeClassName={'active'} href="/">
-            <a className={'home'}>Home</a>
+          <Link activeClassName="active" href="/">
+            <a className="home">Home</a>
           </Link>
-          <Link activeClassName={'active'} href="/about">
-            <a className={'about'}>About</a>
+          <Link activeClassName="active" href="/about">
+            <a className="about">About</a>
           </Link>
-          <Link activeClassName={'active'} href="/partners">
-            <a className={'partners'}>Partners</a>
+          <Link activeClassName="active" href="/partners">
+            <a className="partners">Partners</a>
           </Link>
-          <Link activeClassName={'active'} href="/register">
-            <a className={'joinus'}>JoinUs</a>
+          <Link activeClassName="active" href="/register">
+            <a className="joinus">JoinUs</a>
           </Link>
         </div>
-        <div className={'sentence'}>The joy of reliable great products</div>
+        <div className="sentence">The joy of reliable great products</div>
       </div>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;
