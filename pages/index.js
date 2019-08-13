@@ -1,12 +1,8 @@
 import Head from 'next/head';
 import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
 import { Container, Row, Col } from 'react-grid-system';
 import Layout from '../Components/Layout';
-
-// import Image1 from "./assets/1.jpg";
-// import Image2 from "./assets/2.jpg";
-// import Image3 from "./assets/3.jpg";
+import '@brainhubeu/react-carousel/lib/style.css';
 
 
 export default class Index extends React.Component {
@@ -40,7 +36,40 @@ export default class Index extends React.Component {
             <Col sm={8}>
               <div className="holder_white">
                 <h2>Our services</h2>
-
+                <Container>
+                  <Row>
+                    <Col sm={6}>
+                      <div className="card ">
+                        <div className="cardImage"><img src="/static/img/cards/1.jpeg" alt="Reliablity" /></div>
+                        <div className="cardTitle">Make it reliable</div>
+                        <div className="cardContent">We make it reliable to buy hand made products </div>
+                      </div>
+                    </Col>
+                    <Col sm={6}>
+                      <div className="card">
+                        <div className="cardImage"><img src="/static/img/cards/2.jpg" alt="Reliablity" /></div>
+                        <div className="cardTitle">Make it reliable</div>
+                        <div className="cardContent">We make it reliable to buy hand made products </div>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col sm={6}>
+                      <div className="card">
+                        <div className="cardImage"><img src="/static/img/cards/3.jpg" alt="Reliablity" /></div>
+                        <div className="cardTitle">Make it reliable</div>
+                        <div className="cardContent">We make it reliable to buy hand made products </div>
+                      </div>
+                    </Col>
+                    <Col sm={6}>
+                      <div className="card">
+                        <div className="cardImage"><img src="/static/img/cards/4.jpg" alt="Reliablity" /></div>
+                        <div className="cardTitle">Make it reliable</div>
+                        <div className="cardContent">We make it reliable to buy hand made products </div>
+                      </div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </Col>
             <Col sm={4}>
